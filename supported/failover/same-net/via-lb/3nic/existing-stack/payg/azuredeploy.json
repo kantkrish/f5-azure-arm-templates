@@ -455,7 +455,7 @@
         }, 
         "externalLoadBalancerName": "[concat(variables('dnsLabel'),'-ext-alb')]", 
         "extLbId": "[resourceId('Microsoft.Network/loadBalancers',variables('externalLoadBalancerName'))]", 
-        "internalLoadBalancerName": "[concat(variables('dnsLabel'),'-int-ilb')]", 
+        "internalLoadBalancerName": "[concat(variables('dnsLabel'),'-INTILB')]", 
         "intLbId": "[resourceId('Microsoft.Network/loadBalancers',variables('internalLoadBalancerName'))]", 
         "tagValues": "[parameters('tagValues')]", 
         "newDataStorageAccountName": "[concat(uniqueString(variables('dnsLabel'), resourceGroup().id, deployment().name), 'data000')]", 
