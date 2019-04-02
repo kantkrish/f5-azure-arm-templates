@@ -275,7 +275,7 @@
             "defaultValue": {
                 "application": "F5-ADC",
                 "cost": "F5-ADC",
-                "environment": "Load and Performance",
+                "environment": "Production",
                 "group": "Network",
                 "owner": "Krishna Kant"
 
