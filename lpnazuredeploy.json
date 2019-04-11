@@ -34,7 +34,7 @@
             "type": "string"
         }, 
         "instanceName": {
-            "defaultValue": "f5vm01", 
+            "defaultValue": "A2DVF5VM01", 
             "metadata": {
                 "description": "Name of the Virtual Machine."
             }, 
@@ -275,7 +275,7 @@
             "defaultValue": {
                 "application": "F5-ADC",
                 "cost": "F5-ADC",
-                "environment": "Load and Performance",
+                "environment": "Development",
                 "group": "Network",
                 "owner": "Krishna Kant"
 
@@ -374,7 +374,7 @@
         }, 
         "bigIpNicPortValue": "[variables('bigIpNicPortMap')['3'].Port]", 
         "bigIpMgmtPort": "[variables('bigIpVersionPortMap')[variables('bigIpNicPortValue')].Port]", 
-        "instanceName": "[toLower(parameters('instanceName'))]", 
+        "instanceName": "[toUpper(parameters('instanceName'))]", 
         "availabilitySetName": "[concat(variables('dnsLabel'), '-avset')]", 
         "virtualNetworkName": "[parameters('vnetName')]", 
         "vnetId": "[resourceId(parameters('vnetResourceGroupName'),'Microsoft.Network/virtualNetworks',variables('virtualNetworkName'))]", 
