@@ -34,7 +34,7 @@
             "type": "string"
         }, 
         "instanceName": {
-            "defaultValue": "A2DVF5VM01", 
+            "defaultValue": "A3LPF5VM01", 
             "metadata": {
                 "description": "Name of the Virtual Machine."
             }, 
@@ -275,7 +275,7 @@
             "defaultValue": {
                 "application": "F5-ADC",
                 "cost": "F5-ADC",
-                "environment": "Development",
+                "environment": "Load and Performance",
                 "group": "Network",
                 "owner": "Krishna Kant"
 
